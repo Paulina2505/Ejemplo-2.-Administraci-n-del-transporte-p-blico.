@@ -34,6 +34,7 @@ public class Principal {
         System.out.println("RESULTADO");
         System.out.println("TARIFA EN CENTAVOS: "+decimales[papaMayor()]);
         System.out.println("INGRESOS: "+fitness(decimales[papaMayor()]));
+        System.out.println("PASAJEROS POR HORA: "+fitnesss(decimales[papaMayor()]));
     }
     
     public static void generarPoblacionInicial() {
@@ -73,6 +74,7 @@ public class Principal {
     }
     
     public static double fitness(int x) {return ((10000*x)-(125*x*x));}
+    public static double fitnesss(int x) {return ((10000)-(125*x));}
     
     public static int papaMayor() {
         double mayor = fitness[0];
